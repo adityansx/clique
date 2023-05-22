@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000211;
+}
+nav.post-section-div {
+    display: flex;
+    height: 6%;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(14px);
+    width: 100vw;
+    position: sticky;
+    z-index: 10;
+}
+/* div.post-section-div0 {
+    height: 59px;
+    width: 100vw;
+    background-color: #161822;
+    display: flex;
+} */
+
+div.post-section-div1 {
+    margin-top: 2.3rem;
+    background-color: #161822;
+    width: 350px;
+    top: 36;
+    right: 445;
+    left: 253;
+    bottom: 98;
+}
+
+p.post-section-para0 {
+    color: #ffffff;
+    font-size: 26;
+    font-weight: 700;
+    align-content: center;
+    font-family: Dancing system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    padding-left: 204px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+textarea.post-section-textarea {
+    position: absolute;
+    background-color: #161822;
+    color: #aaaaaa;
+
+    width: 800px;
+    height: 400px;
+    left: 293px;
+    top: 195px;
+}
+span{
+    font-size: 1.625rem;
+    color: #fdfdfd;
+    margin-left: 12vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+textarea.post-section-textarea-title {
+    position: relative;
+    background-color: #161822;
+    color: #aaaaaa;
+    height: 113px;
+    width: 800px;
+    left: 293;
+    right: 340;
+    padding-right: 293;
+}

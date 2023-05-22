@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a post</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+    <script defer src="./create-post.js"></script>
+</head>
+<body>
+    <nav class="navigation">
+        <img class="navigation__logo" src="assets/logo.svg" alt="website logo">
+        <span class="navigation__brand" notranslate>Clique</span>
+        <img src="assets/create-post/cancel-ops.svg" alt="" srcset="" class="navigation__cancel-operation">
+    </nav>
+    <div class="create-post__box">
+        <form action="" class="create-post__form">
+            <textarea name="post-title" id="post-title" class="create-post__textarea post-title-box" placeholder="New post title here"></textarea>
+            <!-- <div class="toolkit">
+                <img src="/assets/create-post/bold.svg" alt="" class="toolkit-icon" id="post-bold-btn">
+                <img src="/assets/create-post/italic.svg" alt="" class="toolkit-icon" id="post-italic-btn">
+                <img src="/assets/create-post/underline.svg" alt="" class="toolkit-icon" id="post-underline-btn">
+                <img src="/assets/create-post/list-ordered.svg" alt="" class="toolkit-icon" id="post-ol-btn">
+                <img src="/assets/create-post/list-unordered.svg" alt="" class="toolkit-icon" id="post-ul-btn">
+                <img src="/assets/create-post/heading.svg" alt="" class="toolkit-icon" id="post-heading-btn">
+                <img src="/assets/create-post/double-quotes-l.svg" alt="" class="toolkit-icon" id="post-quote-btn">
+                <img src="/assets/create-post/code-fill.svg" alt="" class="toolkit-icon" id="post-code-btn">
+                <img src="/assets/create-post/code-box-line.svg" alt="" class="toolkit-icon" id="post-code-box-btn">
+                <img src="/assets/create-post/link.svg" alt="" class="toolkit-icon" id="post-link-btn">
+            </div> -->
+            <textarea name="post-content" id="post-content" class="create-post__textarea post-content-box" placeholder="Write your post content here..."></textarea>
+        </form>
+        <a class="anchor-button button-hover-glow" id="test" href="/">Publish</a>
+    </div>
+</body>
+</html>

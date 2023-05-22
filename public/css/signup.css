@@ -1,0 +1,94 @@
+body{
+padding:0;
+margin:0;
+background-size:cover;
+background-position: center;
+background: radial-gradient(50% 50% at 50% 50%, rgba(36, 39, 75, 0.51) 0%, rgba(0, 2, 17, 0.51) 100%);
+}
+.navbar{
+    width: 100%;
+    background: fixed;
+    background:rgba(255, 255, 255, 0.02);;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.logo{
+    position: absolute;
+left: 0%;
+right: 0.08%;
+top: 0%;
+bottom: 0.6%;
+}
+.clique{
+    position: absolute;
+width: 58px;
+height: 26px;
+left: 204px;
+top: 16px;
+
+font-family: 'Dancing Script';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 100%;
+/* identical to box height, or 26px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+}
+.Sign-in{   
+  width:300px;
+  box-shadow: 0px 4px 3px  rgba(0,0,0,0.25);  
+  background:rgba(255, 255, 255, 0.02);
+  padding: 60px;
+  margin: 8% auto 0;
+  text-align: center;
+  box-sizing: border-box;
+  background: 24px;
+}
+.signup-btn{
+    width:100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor:  pointer;
+}
+.Sign-in h3{
+    color:aquamarine;
+    margin-bottom:30px;
+}
+.input-box{
+    border-radius: 20px;
+    padding: 15px;
+    margin:10px 0;
+    width:100%;
+    border: 1px solid #999;
+    outline: none;
+}
+.button{
+    color:blue;
+    width:100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor:  pointer;
+}
+ .signin-btn{
+    background-color: aquamarine;
+ }
+ .logo2{
+    width: 50px;
+ }

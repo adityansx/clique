@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post section</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg"/>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <% if (name) { %>
+        <%- include('partials/navbar-loggedin') %>
+    <% } else { %>
+        <%- include('partials/navbar') %>
+    <% } %>
+    <div class="post-content">
+        <div class="post-content__editor">
+            <ul class="post-content__editor--list">
+                <li class="post-content__editor--0"><img src="assets/post-body/avatar_2.png" alt="image"></li>
+                <!--avatar of the other user-->
+                <li class="post-content__editor--1">
+                    <p id="post-content__editor--2">Javin paul</p> <!--Other user name-->
+                    <p id="post-content__editor--02">posted on mar 13 2023</p>
+                </li> <!--date on which day the post was created-->
+            </ul>
+            <h2 class="post-content__editor--3">My favorite free course to learn DevOps in 2023</h2>
+            <!--Heading of the post-->
+            <p class="post-content__editor--4">Hello folks if you are an experienced developere and want
+                <!--acctual content-->
+                to become a DevOps Engineer in 2023
+                or just want to learn the development and delivery process and looking for free DevOps online
+                ourses to kickstart your journey, then you have come to the right place. <br>
+                Earlier, I shared the <a href="">DevOps books</a>and <a href="">DevOps training courses</a> and today, I
+                will
+                share the best free online courses and tutorials to learn about DevOps in 2023. <br>
+                These free courses are created by experts and trusted by thousands of developers and they will
+                teach you DecOps concepts, practice, DevOps tools like <a href="">Docker</a>, <a href="">Jenkins</a>,
+                <a href="">Ansible</a>, and <a href="">Kubernetes</a>and suitable for both beginnerrs and experienced
+                developers. <br>
+                They are also curated from popular online learning platforms like <a href="">Udemy</a>, <a
+                    href="">Plurasight</a>, and
+                <a href="">Coursera</a>, and they offer practice and hands-on training. <br>
+                DevOps is said to be the next level technology that is world requires. With the use of DevOps, companies
+                are deploying codes 30 times faster than before and that's why learning DevOps has become very important
+                for senior Software Engineers. <br>
+                If you don't know, DevOps is a set of practices that fuses <a href="">Software Development</a> and IT
+                Opereations. <br>
+                The aim here is to shorten the software developmet process without compromising the quality of the product.
+                <br>
+                Few DevOps aspects are taken form agile technology. In this ever-changing industry, it's of utmost
+                importance
+                to keep acquiringnew skills sets. It's also a very vast subject and there are a lot of tools and
+                technologies
+                you need to learn, as I have shown you on this <a href="">DevOps RoadMap.</a> <br>
+                The question arises of what courses you should opt for to give you the best learning experience and learn
+                essental
+                DEvOps tools, processes and principles. <br>
+                Well given so many tutorials available online its difficult decision to make but don't worry, I have
+                shortlisted
+                my favorite online courses for DevOps from Udemy, Coursera, freeeCodeCamp, and YouTube which you can join to
+                learn
+                DevOps in 2023. <br>
+                All these courses are a little different from others, so make sure that you read the descriptions correctly
+                to understand
+                which will be benefecial to opt for the cause.
+            </p>
+        </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+@import url('https://fonts.bunny.net/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(50% 50% at 50% 50%, rgb(10 14 65) 0%, rgb(0 0 0) 100%);
+   /* background-color:rgba(36, 39, 75, 0.51) rgba(0, 2, 17, 0.51) ; */
+   font-family: 'Inter', sans-serif;
+}
+/*.post{
+    display: flex;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(14px) ;
+}
+.post__nav{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 1);
+    width: auto;
+    height: 59px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}*/
+/*img.navigation__logo {
+    height: 24px; 
+    width: 34px; 
+    width: 2.125rem;
+    height: 38.98px; 
+    height: 2.4375rem;
+    margin: auto 0 auto 12.5dvw ;
+    user-select: none;
+    cursor: pointer;
+}*/
+
+/*.post__nav0{
+    float: left;
+    margin-top: 13px;
+    margin-bottom: 14px;
+    margin-left: 157px;
+}*/
+/*.post__nav1{
+    float: left;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.post__nav2{
+    float: left;
+    display: inline;
+    margin-top: 16px;
+    padding-left: 20px;
+    height: 30px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+}*/
+/*.post__nav2{
+    color: var(--text-color);
+    margin: 13.1px 12.8px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: Dancing Script, Inter, sans-serif;
+    user-select: none;
+    margin-top: 17px;
+}*/
+/*.post__nav3{
+    float: left;
+    background:  #101219;
+    border: 0px;
+    border-radius: 6px;
+    text-align: center;
+    color: rgba(255,253,253,1);
+    margin-top: 16px;
+    margin-bottom: 11px;
+    margin-left: 86px;
+    padding: 0;
+    height: 30px;
+    width: 324px;
+}
+.post__nav4{
+    float: right;
+    margin-top: 12px;
+    margin-left: 419px;
+    text-align: center;
+    background-color: rgba(0, 189, 227, 1);
+    color: rgba(255,253,253,1);
+    width: 130px;
+    height: 35px;
+    border: 2px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.post__nav5{
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    margin-left: 77px;
+}*/
+nav.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 59px;
+    background-color: rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(4px);
+    /* width: 100vw; */
+    position: sticky;
+    top: -0.5px;
+    z-index: 2;
+    /* overflow-y: hidden; */
+    /* overscroll-behavior-y: none; */
+    transform: translateZ(0);
+}
+
+img.navigation__logo {
+    /* height: 24px; */
+    /* width: 34px; */
+    width: 2.125rem;
+    /* height: 38.98px; */
+    height: 2.4375rem;
+    margin: auto 0 auto 12.5dvw ;
+    user-select: none;
+}
+
+span.navigation__brand {
+    color: #fdfdfd;
+    margin: auto 0.8rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: Dancing Script, Inter, sans-serif;
+    user-select: none;
+}
+/* Resetting default form stylings */
+legend,
+fieldset,
+select,
+textarea,
+input,
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.navigation__search-form {
+    display: flex;
+    justify-content: center;
+    background: #000211;
+    margin-left: 5.6319580878vw;
+    border: 1px solid rgba(176, 195, 212, 0.08);
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.navigation__search {
+    border: none;
+    background: transparent;
+    margin: 0;
+    border: 0;
+    padding: 7px 8px 7px 0;
+    width: 234px;
+    font-size: 14px;
+    color: #fdfdfd;
+}
+
+.navigation__search:focus {
+    outline: none;
+}
+
+.navigation__search::placeholder {
+    color: #b0c3d4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* .navigation__search{
+    background: #282e42;
+    border: 2px;
+    border-color: gray;
+    border-radius: 6px;
+    color: rgba(255,253,253,1);
+    margin: auto 0 auto 0; 
+    margin-right: 0;
+    padding-left: 30px;
+    height: 30px;
+    width: 324px;  
+} */
+/* .navigation__search-button { */
+button[type="submit"].navigation__search-button {
+    text-indent: -999px;
+    overflow: hidden;
+    margin-top: 4px;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/search-bar/search-line.svg);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.navigation__post-button{
+    float: right;
+    margin-left: auto;
+    text-align: center;
+    background-color: rgba(0, 189, 227, 1);
+    color: rgba(255,253,253,1);
+    width: 130px;
+    height: 35px;
+    border: 2px;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.navigation__image{
+    margin: auto 12.5vw auto 0;
+}
+.post-content{
+    align-self: center ;
+    color: rgba(255,253,253,1);
+    background:  linear-gradient(180deg, #161822 0%, rgba(22, 24, 34, 0) 100%);;
+    margin-left: 349px;
+    margin-right: 349px;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    border: 2px solid;
+    border-color: rgba(176, 195, 212, 0.08);
+    border-radius: 12px;
+    width: 742px;
+}
+.post-content__editor{
+    background-color: transparent;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 3.4375rem;
+}
+.post-content__editor--list{
+    list-style-type: none;
+    margin: 0px;
+}
+
+.post-content__editor--0{
+    float: left;
+    margin-top: 1.5rem;
+}
+.post-content__editor--1{
+    float: left;
+    margin-top: 1.8125rem;
+    margin-left: 0.8125rem;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+#post-content__editor--2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700; 
+}
+#post-content__editor--02{
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+    font-weight: 400px;
+}
+.post-content__editor--3{
+    padding-top: 5.75rem;
+    margin-top: 0px;
+    margin-bottom: 3.5rem;
+    margin-right: 4.75rem;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.post-content__editor--4{
+    font-style: inter:
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

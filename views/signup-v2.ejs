@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Clique</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg"/>
+</head>
+<body>
+    <nav class="navigation">
+        <img
+            class="navigation__logo"
+            src="assets/logo.svg"
+            alt="website logo"
+        />
+        <span class="navigation__brand" notranslate>Clique</span>
+        <div class="navigation__button" id="navigation__sign-up" style="cursor: pointer;" onclick="(function () {
+            window.location.href = '/login'
+        })();">
+            Sign In
+        </div>
+    </nav>
+    <div class="signin-box createAccount-box">
+        <img
+            id="sigin-box__user-avatar"
+            src="assets/logo-with-bg.svg"
+            alt="Brand Logo"
+        />
+        <div class="font-weight-600" id="signin-box__signin-text">
+            Create your Clique account
+        </div>
+        <div id="signin-box__signup">
+            <span class="font-weight-300">Already have an account? </span
+            ><span class="font-weight-600 or-prompt" style="cursor: pointer;" onclick="(function () {
+                window.location.href = '/login'
+            })();">Log in now</span>
+        </div>
+        <form method="POST" action="/register" class="signin_form createAccount_form">
+            <input
+                class="signin_form-username"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                spellcheck="false"
+            />
+            <input
+                type="email"
+                id="Email"
+                name="email"
+                placeholder="Email"
+                spellcheck="false"
+            />
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+            />
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+            />
+            <input
+                class="signin_form-button createAccount_form-btn"
+                id="submit"
+                type="submit"
+                value="Create Account"
+            />
+        </form>
+    </div>
+</body>
+</html>

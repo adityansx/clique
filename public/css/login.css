@@ -1,0 +1,38 @@
+@import url('https://fonts.bunny.net/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.bunny.net/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    --background-color: #000211;
+    --signup-btn: rgba(0, 48, 132, 0.3);
+    --text-color: #fdfdfd;
+    --custom: #f8f8f2;
+    --off-blue: #B0C3D4;
+    --gradial-background: radial-gradient(50% 50% at 50% 50%, rgba(36, 39, 75, 0.51) 0%, rgba(0, 2, 17, 0.51) 100%);
+    --post-background: linear-gradient(86.38deg, #161822 0%, rgba(22, 24, 34, 0) 99.8%);
+    --signin-box-bg: rgba(255, 255, 255, 0.02);
+    --signin-textfield: rgba(0, 0, 0, 0.16);
+    scroll-behavior: smooth;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* #body {
+    position: sticky;
+    z-index: -1; 
+    height: 100%;
+    background: var(--gradial-background);
+    background-attachment: fixed;
+} */
+

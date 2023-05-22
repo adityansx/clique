@@ -1,0 +1,36 @@
+<nav class="navigation">
+    <a href="/"><img class="navigation__logo" src="assets/logo.svg" alt="website logo"></a>
+    <span class="navigation__brand" notranslate onclick="(function () {
+        window.location.href = '/'
+    })();">Clique</span>
+    <form method="GET" action="/search" class="navigation__search-form">
+        <input type="search" name="q" class="navigation__search" placeholder="Search">
+        <button type="submit" class="navigation__search-button">Search</button>
+    </form>
+    <!-- <button class="navigation__post-button">Create Post</button> -->
+    <a class="anchor-button navigation__post-button button-hover-glow navigation__create-post-btn" href="/create-post">Create Post</a>
+    <img class="navigation__image" src="assets/post-body/avatar_1.png" alt="image">
+</nav>
+<dialog data-profile-modal class="navigation__profile-modal">
+    <ul>
+        <a>
+            <li style="padding-bottom: 14px;">
+                <span style="position: relative; top: -3px;">Hello, <%= name %></span>
+            </li>
+        </a>
+        <a href="">
+            <li>
+                <img src="assets/profile-modal/my-posts.svg" aria-hidden="true">
+                <span style="position: relative; top: -6px;">My Posts</span>
+            </li>
+        </a>
+        <form id="logout-form" action="/logout?_method=DELETE" method="POST" style="cursor: pointer;">
+            <a id="navigation__logout">
+                <li>
+                    <img src="assets/profile-modal/logout-box-line.svg" aria-hidden="true">
+                    <span style="position: relative; top: -9px;">Log Out</span>
+                </li>
+            </a>
+        </form>
+    </ul>
+</dialog>

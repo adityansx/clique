@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg"/>
+    <script defer src="app.js"></script>
+    <style>
+        .posts-section__post {
+            cursor: pointer;
+        }
+        .posts-section:nth-last-child(1) {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <% if (name) { %>
+        <%- include('partials/navbar-loggedin') %>
+    <% } else { %>
+        <%- include('partials/navbar') %>
+    <% } %>
+    <section class="posts-section">
+        <% for( let i = 0; i < 8; i++ ) { %>
+            <div class="post__wrapper">
+                <article class="posts-section__post" onclick="(function() {
+                    window.location.href = '/post'
+                })();">
+                    <span class="post__author"><%= author %></span>
+                    <h2 class="post__heading"><%= heading %></h2>
+                    <span class="post__date"><%= postDate %></span>
+                    <span class="post__dot-separator"> • </span>
+                    <span class="post__read-time"><%= readTime %></span>
+                </article>
+            </div>
+        <% } %>
+    </section>
+</body>
+</html>

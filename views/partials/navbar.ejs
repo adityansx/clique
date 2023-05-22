@@ -1,0 +1,21 @@
+<!-- <nav class="navigation">
+    <img class="navigation__logo" src="assets/logo.svg" alt="website logo">
+    <span class="navigation__brand" notranslate>Clique</span>
+</nav> -->
+<nav class="navigation">
+    <a href="/">
+        <img class="navigation__logo" src="assets/logo.svg" alt="website logo">
+    </a>
+    <span class="navigation__brand" notranslate onclick="(function () {
+        window.location.href = '/'
+    })();">Clique</span>
+    <form method="GET" action="/search" class="navigation__search-form">
+        <input type="search" name="q" class="navigation__search" placeholder="Search">
+        <button type="submit" class="navigation__search-button">Search</button>
+    </form>
+    <div class="navigation__button" id="navigation__sign-up" style="cursor: pointer;" onclick="(function () {
+        window.location.href = '/register'
+    })();">
+        Sign Up
+    </div>
+</nav>
